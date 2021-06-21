@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ensures that no content goes out of the screen -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Displays the image captured -->
+
+        <ImageView
+            android:id="@+id/selected_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:layout_below="@id/selected_image"
+            app:srcCompat="@android:color/background_light" />
+
+        <!-- When this button is clicked , an image is captured -->
+
+        <Button
+            android:id="@+id/capture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/selected_image"
+            android:layout_centerHorizontal="true"
+            android:text="Capture" />
+
+        <!-- Displays the result -->
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/capture_button"
+            android:layout_marginBottom="44dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/label1"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
